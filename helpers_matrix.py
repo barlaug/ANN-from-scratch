@@ -40,4 +40,3 @@ def flatten_matrix(m):
     """Flattens out an NxM matrix to a vector of length (NxM)"""
     return [el for row in m for el in row]
 
-printlist(flatten_matrix([[2, 1], [1, 2]]))
