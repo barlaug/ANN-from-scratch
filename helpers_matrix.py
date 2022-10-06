@@ -1,4 +1,4 @@
-# Helper functions for matrix/vector operations
+# TODO: Remove functions that are not used. Improve readability. Make if statement in diff() more general.
 
 def transpose(m):
     """Takes the transpose of a NxM matrix
