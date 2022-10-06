@@ -1,7 +1,7 @@
 # ANN from scratch
 This project is part of course 22110 at Denmarks Technical University (DTU). The project aims at creating a well functioning artificial neural network (ANN) from scratch, using pure python. That is, no NumPy, Pandas, Keras, Tensorflow or any other supporting libraries. 
 
-## The data:
+### The data:
 The data is a part of a project at DTU HealthTech, which is about prediction of whether certain variations of a Single-nucleotide polymorphism (SNP) will lead to a disease or not. The data folder consists of 4 .howlin-files in which each line is a datapoint. Three of the data sets are used for training and one is used for model evaluation.
 
 ## Input-Output:
