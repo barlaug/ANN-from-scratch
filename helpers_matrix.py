@@ -1,4 +1,5 @@
-# TODO: Remove functions that are not used. Improve readability. Make if statement in diff() more general.
+# TODO: Remove functions that are not used. Improve readability. Make if statement in diff() more general
+# TODO: maybe change name from helpers_matrix to utils/utilities or something
 
 def transpose(m):
     """Takes the transpose of a NxM matrix
