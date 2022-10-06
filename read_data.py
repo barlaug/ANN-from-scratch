@@ -1,18 +1,16 @@
-# This script reads the data from the data folder and creates training and testing data sets on the right format
-
 path_dir = "data/"
 filename_1 = "homology_reduced_subset_1.howlin"
 filename_2 = "homology_reduced_subset_2.howlin"
 filename_3 = "homology_reduced_subset_3.howlin"
 filename_4 = "homology_reduced_subset_4.howlin"
-filenames = [filename_1, filename_2, filename_3, filename_4] # include 3,4 later
+filenames = [filename_1, filename_2, filename_3, filename_4] 
 
 # Use file 1,2,3 as training data, 4 as evaluation data
 
-train_x = [] # inputs
-train_y = [] # targets
-test_x = []
-test_y = []
+train_x = [] # training inputs
+train_y = [] # training targets
+test_x  = [] # testing inputs
+test_y  = [] # testing targets
 
 for i, filename in enumerate(filenames):
     file = open(path_dir+filename, "r")
@@ -31,26 +29,8 @@ for i, filename in enumerate(filenames):
             train_x.append(data[:-1])
             train_y.append(int(data[-1])) 
 
-"""
-# Testing. Remember to remove.
-print("27?")
-print(len(train_x[0]),len(train_x[100]), len(train_x[len(train_x)-1]))
-print("sample:")
-print(train_x[34])
-print("equal?")
-print(len(train_x))
-print(len(train_y))
 
-print("27?")
-print(len(test_x[0]),len(test_x[100]), len(test_x[len(test_x)-1]))
-print("sample:")
-print(test_x[34])
-print("equal?")
-print(len(test_x))
-print(len(test_y))
-print(test_y)
-"""
+# WITH 1,2,3 AS TRAIN AND 4 AS TEST:
 
 # SIZE OF TRAINING SET = 4045 SAMPLES
 # SIZE OF TEST SET = 1344 SAMPLES
-
