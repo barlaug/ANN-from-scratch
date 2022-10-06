@@ -22,4 +22,4 @@ The input for training is whitespace separated floating point numbers. There are
 The main focus of this project is to build a well functioning artificial neural network - tuning hyperparameters and optimizing the accuracy of the model has therefore only been done to a certain satisfactory level. The prediction errors reflects this fact.
 
 
-By Eirik Runde Barlaug and Sara Heiberg
+**By:** Eirik Runde Barlaug and Sara Heiberg
