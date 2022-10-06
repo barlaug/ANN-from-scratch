@@ -4,7 +4,7 @@ This project is part of course 22110 at Denmarks Technical University (DTU). The
 ### The data:
 The data is a part of a project at DTU HealthTech, which is about predicting whether certain variations of a Single-nucleotide polymorphism (SNP) will lead to a disease or not. The data folder consists of four files in which each line is a single datapoint. Three of the data sets are used for training and one is used for model evaluation.
 
-The input for training is whitespace separated floating point numbers. There are 27 input variables and a single target value (1 = disease, 0 = healthy) as such:
+The input for training is whitespace separated floating point numbers. There are 27 input variables and a single target value (1 = disease, 0 = healthy), as such:
 ```
 0.075 0.3 0.075 0.225 -0.3 -0.075 0.15 -0.15 0 -0.3 -0.3 0.15 -0.3 -0.225 0 -0.15 -0.15 -0.3 -0.225 -0.3 -0.075 0.3 0.193746064573032135 1.011 0.7525 0.744312561819980218 0.612 0
 -0.075 0.075 0.15 0.15 -0.375 -0.15 0.375 -0.15 -0.225 -0.375 -0.15 0.15 -0.3 -0.375 -0.3 -0.225 -0.225 -0.375 -0.3 -0.375 -0.225 0.15 0.173058043883721677 1.011 0.7525 0.744312561819980218 0.340 0
