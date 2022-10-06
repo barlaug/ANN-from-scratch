@@ -11,6 +11,7 @@ The input for training is whitespace separated floating point numbers. There are
 -0.3 -0.225 -0.15 -0.3 -0.45 -0.15 -0.225 -0.375 0.75 -0.375 -0.075 -0.225 -0.3 -0.3 -0.375 -0.3 -0.3 -0.375 -0.075 -0.375 -0.075 0.75 0.336279812283658667 1.011 0.7525 0.744312561819980218 0.100 1
 -0.15 -0.3 0 -0.3 -0.225 0.075 -0.225 -0.375 0.6 -0.075 -0.15 -0.225 0 0.3 -0.225 -0.3 -0.3 -0.225 0.3 -0.3 -0.15 0.6 0.303728369615393505 1.011 0.7525 0.744312561819980218 0.212 1
 ```
+The data set is made specifically for network training. It is therefore not dirty or corrupted in any way. 
 
 ### Modules:
 * ***helpers_matrix.py***: Consists solely of utility functions for matrix and vector operations. 
