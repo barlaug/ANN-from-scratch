@@ -175,13 +175,18 @@ def train(x_train, y_train, weights, biases, a, num_epochs=100, tol_err=0.05):
             # Then, backpropagate and update weights/biases:
             weights, biases = backpropagate(xk, yk, weights, biases, a)
         
-        error_i = sum(errors_i)/len(x_train)
-        error_trajectory.append(error_i)
-        print(f"Iteration: {i}, Avg. error: {error_i}")
-        if error_i < tol_err:
+        mean_error_i = sum(errors_i)/len(x_train)
+        error_trajectory.append(mean_error_i)
+        print(f"Iteration: {i}, Avg. error: {mean_error_i}")
+        if mean_error_i < tol_err:
             break
+        
+        # Shuffle x_train and y_train equally
+        xy_tuples = list(zip(x_train, y_train))
+        random.shuffle(xy_tuples)
+        x_train, y_train = zip(*xy_tuples)
+
         i += 1
-        # shuffle data here????
     
     return error_trajectory, weights, biases
 
@@ -200,7 +205,7 @@ weights = [w1, w2]
 biases  = [b1, b2]
 
 # Create and train model
-alpha = 0.01
-n_epochs = 50
+alpha = 0.005
+n_epochs = 150
 error_traj, weights, biases = train(train_x, train_y, weights, biases, a=alpha, num_epochs=n_epochs)
 accuracy_traj = [(1-el) for el in error_traj]
