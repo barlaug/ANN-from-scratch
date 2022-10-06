@@ -2,7 +2,7 @@
 This project is part of course 22110 at Denmarks Technical University (DTU). The project aims at creating a well functioning artificial neural network (ANN) from scratch, using pure python. That is, no NumPy, Pandas, Keras, Tensorflow or any other supporting libraries. 
 
 ### The data:
-The data is a part of a project at DTU HealthTech, which is about predicting whether certain variations of a Single-nucleotide polymorphism (SNP) will lead to a disease or not. The data folder consists of 4 .howlin-files in which each line is a single datapoint. Three of the data sets are used for training and one is used for model evaluation.
+The data is a part of a project at DTU HealthTech, which is about predicting whether certain variations of a Single-nucleotide polymorphism (SNP) will lead to a disease or not. The data folder consists of four files in which each line is a single datapoint. Three of the data sets are used for training and one is used for model evaluation.
 
 The input for training is whitespace separated floating point numbers. There are 27 input variables and a single target value (1 = disease, 0 = healthy) as such:
 ```
