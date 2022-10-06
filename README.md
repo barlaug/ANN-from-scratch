@@ -20,10 +20,10 @@ The input for training is whitespace separated floating point numbers. There are
 
 ### Additional reading:
 For improved understanding, see the following sources: 
-* [label](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-* [label] (https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/?fbclid=IwAR2vfPEcpnQ-Nl0ZXi-FqYZRHfFb9kzOZFGPktrXxuELaIDLA4NDPjs17RI)
-* [label](https://towardsdatascience.com/neural-networks-backpropagation-by-dr-lihi-gur-arie-27be67d8fdce)
-* [label](https://towardsdatascience.com/stochastic-gradient-descent-clearly-explained-53d239905d31)
+* [Youtube series about deep learning basics](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+* [Short high level article explaining the key concepts of an ANN](https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/?fbclid=IwAR2vfPEcpnQ-Nl0ZXi-FqYZRHfFb9kzOZFGPktrXxuELaIDLA4NDPjs17RI)
+* [Some calculus behind the backpropogation algorithm](https://towardsdatascience.com/neural-networks-backpropagation-by-dr-lihi-gur-arie-27be67d8fdce)
+* [Explanation of stochastic gradient descent](https://towardsdatascience.com/stochastic-gradient-descent-clearly-explained-53d239905d31)
 
 ### End note
 The main focus of this project is to build a well functioning artificial neural network - tuning hyperparameters and optimizing the accuracy of the model has therefore only been done to a certain satisfactory level. The prediction errors reflects this fact.
