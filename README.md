@@ -15,7 +15,7 @@ The input for training is whitespace separated floating point numbers. There are
 ### Modules:
 * ***helpers_matrix.py***: Consists solely of utility functions for matrix and vector operations. 
 * ***read_data.py***: Reads the data, transforms it into a the correct datatype and shape, and divides it into training and test datasets.
-* ***train.py***: Initializes, creates and trains the neural net based on the training data.
+* ***train.py***: Initializes, creates and trains the neural net based on the training data. The model is implemented with a bias neuron on each layer - that way it learns better.
 * ***predict_evaluate.py***: Predicts the test data by using the tuned model obtained from *train.py* and evaluates those predictions.
 
 ### Additional reading:
