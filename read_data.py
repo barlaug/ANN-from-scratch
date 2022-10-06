@@ -5,7 +5,7 @@ filename_1 = "homology_reduced_subset_1.howlin"
 filename_2 = "homology_reduced_subset_2.howlin"
 filename_3 = "homology_reduced_subset_3.howlin"
 filename_4 = "homology_reduced_subset_4.howlin"
-filenames = [filename_1, filename_2]#, filename_3, filename_4] # include 3,4 later
+filenames = [filename_1, filename_2, filename_3, filename_4] # include 3,4 later
 
 # Use file 1,2,3 as training data, 4 as evaluation data
 
