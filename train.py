@@ -177,7 +177,7 @@ def train(x_train, y_train, weights, biases, a, num_epochs=100, tol_err=0.05):
         
         mean_error_i = sum(errors_i)/len(x_train)
         error_trajectory.append(mean_error_i)
-        print(f"Iteration: {i}, Avg. error: {mean_error_i}")
+        #print(f"Iteration: {i}, Avg. error: {mean_error_i}")
         if mean_error_i < tol_err:
             break
         
@@ -192,6 +192,7 @@ def train(x_train, y_train, weights, biases, a, num_epochs=100, tol_err=0.05):
 
 
 # MODEL:
+import matplotlib.pyplot as plt
 
 # Define number of layers and number of nodes per layer
 num_inputs = len(train_x[0])
@@ -206,6 +207,27 @@ biases  = [b1, b2]
 
 # Create and train model
 alpha = 0.005
-n_epochs = 150
+n_epochs = 50
 error_traj, weights, biases = train(train_x, train_y, weights, biases, a=alpha, num_epochs=n_epochs)
 accuracy_traj = [(1-el) for el in error_traj]
+
+# PLOTS: 
+"""
+import matplotlib.pyplot as plt
+n_epochs = 50
+error_traj_1, _, _ = train(train_x, train_y, weights, biases, a=0.1, num_epochs=n_epochs)
+error_traj_2, _, _ = train(train_x, train_y, weights, biases, a=0.01, num_epochs=n_epochs)
+error_traj_3, _, _ = train(train_x, train_y, weights, biases, a=0.005, num_epochs=n_epochs)
+error_traj_4, _, _ = train(train_x, train_y, weights, biases, a=0.001, num_epochs=n_epochs)
+
+plt.plot(error_traj_1)
+plt.plot(error_traj_2)
+plt.plot(error_traj_3)
+plt.plot(error_traj_4)
+plt.xlabel("epoch")
+plt.ylabel("Avg. error")
+plt.legend(["alpha = 0.1", "alpha = 0.01", "alpha = 0.005", "alpha = 0.001"])
+plt.title("Error trajectories for different alphas. n_epoch = 50.")
+plt.savefig("alpha_comparison_6", dpi=400)
+plt.show()
+"""
