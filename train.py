@@ -1,5 +1,3 @@
-#TODO: Maybe add shuffle function to shuffle data each new epoch in training
-
 import helpers_matrix as hm
 from read_data import train_x, train_y
 import random

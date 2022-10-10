@@ -1,5 +1,4 @@
 #TODO: check if output node should be changed somehow... see comment
-#TODO: add plots of error_traj, acc_traj and so on, add some info to plot like alpha and such 
 
 from train import weights, biases
 from train import feed_forward
