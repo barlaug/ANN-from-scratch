@@ -1,7 +1,7 @@
 #TODO: check if output node should be changed somehow... see comment
 #TODO: add plots of error_traj, acc_traj and so on, add some info to plot like alpha and such 
 
-from train import weights, biases, error_traj, accuracy_traj
+from train import weights, biases
 from train import feed_forward
 from read_data import test_x, test_y
 
@@ -43,5 +43,3 @@ false = len(test_x) - correct
 print(f"The average error on the test data is: {tot_errors}")
 print(f"Number of correct classified input data points is: {correct}.\t That is {(correct/len(test_x))*100}% accurate.")
 print(f"Number of incorrect classified input data points is: {false}.\t That is {(false/len(test_x))*100}% inaccurate.\n")
-
-# OBTAIN SOME VISUALS LATER
