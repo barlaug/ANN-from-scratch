@@ -175,8 +175,9 @@ def train(x_train, y_train, weights, biases, a, num_epochs=100, tol_err=0.05):
         
         mean_error_i = sum(errors_i)/len(x_train)
         error_trajectory.append(mean_error_i)
-        #print(f"Iteration: {i}, Avg. error: {mean_error_i}")
+        print(f"Epoch: {i}, Avg. error: {mean_error_i}")
         if mean_error_i < tol_err:
+            print(f"Finished. Error below tolerance ({tol_err}).")
             break
         
         # Shuffle x_train and y_train equally

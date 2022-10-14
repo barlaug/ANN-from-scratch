@@ -22,9 +22,10 @@ def predict(x_test, y_test, weights, biases):
         sample_y = y_test[i]
         pred = feed_forward(sample_x, weights, biases)
         if pred > 0.5: # Naive? Change to some sort of softmax later on? -- Find out later maybe we dont have to put it in a class even
-            predictions.append(1)
+            predicted_class = 1
         else:
-            predictions.append(0)
+            predicted_class = 0
+        predictions.append(predicted_class)
         error_i = 0.5*((pred - sample_y)**2)
         pred_errors.append(error_i)
     return predictions, pred_errors
@@ -39,6 +40,7 @@ for i in range(len(preds)):
         correct += 1
 false = len(test_x) - correct
 
-print(f"The average error on the test data is: {tot_errors}")
+
+print(f"The per-epoch-average mean square error on the test data is: {tot_errors}")
 print(f"Number of correct classified input data points is: {correct}.\t That is {(correct/len(test_x))*100}% accurate.")
 print(f"Number of incorrect classified input data points is: {false}.\t That is {(false/len(test_x))*100}% inaccurate.\n")
