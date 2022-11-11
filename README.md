@@ -14,10 +14,16 @@ The input for training is whitespace separated floating point numbers. There are
 The data set is made specifically for network training. It is therefore not dirty or corrupted in any way. 
 
 ### Modules:
-* ***helpers_matrix.py***: Consists solely of utility functions for matrix and vector operations. 
+* ***weights_and_biases.txt***: .txt-file containing weights and biases describing the trained model
+* -> **utilities:**
+    * ***helpers_matrix.py***: Utility functions for matrix and vector operations. 
+    * ***train_utils.py***: Utilities for training, as well as some globals describing the structure of the ANN
+    * ***predict_evaluate_utils.py***: Utilities for prediction and evaluation
+    * ***file_utils.py***: Utilities for writing weights and biases to a txt-file and reading + transforming them back to matrices
 * ***read_data.py***: Reads the data, transforms it into a the correct datatype and shape, and divides it into training and test datasets.
 * ***train.py***: Initializes, creates and trains the neural net based on the training data. The model is implemented with a bias neuron on each layer - that way it learns better.
-* ***predict_evaluate.py***: Predicts the test data by using the tuned model obtained from *train.py* and evaluates those predictions.
+* ***predict_evaluate.py***: Predicts the test data by using the tuned weights and biases from file, and evaluates those predictions.
+
 
 ### Additional reading:
 For improved understanding, see the following sources: 
