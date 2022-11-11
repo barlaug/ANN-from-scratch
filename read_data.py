@@ -1,3 +1,7 @@
+#######################################################################################################################
+## This file reads the four files from the data-folder and creates training and testing datasets on the right format ##
+#######################################################################################################################
+
 path_dir = "data/"
 filename_1 = "homology_reduced_subset_1.howlin"
 filename_2 = "homology_reduced_subset_2.howlin"
@@ -5,7 +9,7 @@ filename_3 = "homology_reduced_subset_3.howlin"
 filename_4 = "homology_reduced_subset_4.howlin"
 filenames = [filename_1, filename_2, filename_3, filename_4] 
 
-# Use file 1,2,3 as training data, 4 as evaluation data
+# Use file 1,2,3 as training data, 4 as test data
 
 train_x = [] # training inputs
 train_y = [] # training targets
@@ -31,6 +35,5 @@ for i, filename in enumerate(filenames):
 
 
 # WITH 1,2,3 AS TRAIN AND 4 AS TEST:
-
 # SIZE OF TRAINING SET = 4045 SAMPLES
 # SIZE OF TEST SET = 1344 SAMPLES

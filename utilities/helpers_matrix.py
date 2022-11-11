@@ -1,5 +1,6 @@
-# TODO: Remove functions that are not used. Improve readability. Make if statement in diff() more general
-# TODO: maybe change name from helpers_matrix to utils/utilities or something
+#############################################################################
+## This file consists of helper functions for matrix and vector operations ##
+#############################################################################
 
 def transpose(m):
     """Takes the transpose of a NxM matrix
@@ -76,7 +77,7 @@ def diff(m1, m2):
             print("m1 and m2 must have same number of rows")
             return
         if (type(m1[0]) == list) and (type(m2[0]) == list): # both matrices, confimed same number of rows
-            if len(m1[0]) != len(m2[0]): # assume that all rows are of equal length, MAYBE MAKE MORE ROBUST LATER
+            if len(m1[0]) != len(m2[0]): # assume that all rows are of equal length: Robust enough for this project as we can garantee correct input
                 print("m1 and m2 must have same number of columns")
                 return
             # Size ok. Perform calc
