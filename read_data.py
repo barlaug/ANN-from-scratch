@@ -9,7 +9,7 @@ filename_3 = "homology_reduced_subset_3.howlin"
 filename_4 = "homology_reduced_subset_4.howlin"
 filenames = [filename_1, filename_2, filename_3, filename_4] 
 
-# Use file 1,2,3 as training data, 4 as test data
+# Use file 1,2,3 as training data, 4 as test data.
 
 train_x = [] # training inputs
 train_y = [] # training targets

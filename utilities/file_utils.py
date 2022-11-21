@@ -10,7 +10,7 @@ def write_w_b(filename, weights, biases):
 
     # write matrix to file, row wise
     for w_vec_i in w_mat:
-        str_i = " " # inint empty string
+        str_i = " " # init empty string
         w_vec_i_ = [str(w) for w in w_vec_i] # turn all elements of weight vector into string
         w_vec_i_str = str_i.join(w_vec_i_) # make above string list into a single string, separated by a whitespace
         f.write(w_vec_i_str + "\n") # write the string to file
@@ -54,7 +54,7 @@ def read_w_b(filename, layers):
         elif i == (layers[1] + 1): # bias vector for 2nd layer
             b1 = line.strip().split(" ")
             b1 = [float(b) for b in b1]
-        else: # we are at bottom if file
+        else: # we are at bottom of file
             b2 = line.strip()
             b2 = float(b2)
     

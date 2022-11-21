@@ -94,5 +94,3 @@ def diff(m1, m2):
     else:
         print("m1, m2 must be lists or list of lists")
         return
-
-

@@ -22,25 +22,3 @@ accuracy_traj = [(1-el) for el in error_traj]
 write_w_b("weights_and_biases.txt", weights, biases)
 
 print(weights, biases)
-
-
-# PLOTTING: 
-"""
-import matplotlib.pyplot as plt
-n_epochs = 50
-error_traj_1, _, _ = train(train_x, train_y, weights, biases, a=0.1, num_epochs=n_epochs)
-error_traj_2, _, _ = train(train_x, train_y, weights, biases, a=0.01, num_epochs=n_epochs)
-error_traj_3, _, _ = train(train_x, train_y, weights, biases, a=0.005, num_epochs=n_epochs)
-error_traj_4, _, _ = train(train_x, train_y, weights, biases, a=0.001, num_epochs=n_epochs)
-
-plt.plot(error_traj_1)
-plt.plot(error_traj_2)
-plt.plot(error_traj_3)
-plt.plot(error_traj_4)
-plt.xlabel("epoch")
-plt.ylabel("Avg. error")
-plt.legend(["alpha = 0.1", "alpha = 0.01", "alpha = 0.005", "alpha = 0.001"])
-plt.title("Error trajectories for different alphas. n_epoch = 50.")
-plt.savefig("alpha_comparison_6", dpi=400)
-plt.show()
-"""

@@ -41,4 +41,4 @@ def evaluate(y_pred, x_test, y_test, pred_errors):
     false = len(x_test) - correct
     print(f"The per-epoch-average mean square error on the test data is: {round(tot_errors, 6)}")
     print(f"Number of correct classified input data points is: {correct}. That is {round((correct/len(x_test))*100, 4)}% accurate.")
-    print(f"Number of incorrect classified input data points is: {false}. That is {round((false/len(x_test))*100, 4)}% inaccurate.\n")
+    print(f"Number of incorrect classified input data points is: {false}. That is {round((false/len(x_test))*100, 4)}% inaccurate.")
